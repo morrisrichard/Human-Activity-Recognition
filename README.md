@@ -20,10 +20,10 @@ Step 2 unzips and loads into R the relevant components of the original data set.
 •	train_subject/test_subject: vectors which assign observations in the train and test datasets to the 30 volunteers (“subjects") in the experiment (there are 21 in the train dataset and 9 in the test dataset) 
 •	train_labels/test_labels: vectors which assign the six different activities to the observations in the train and test datasets respectively
 
-Step 3 combines the observations, variable names, activities and subjects into single data frames for each of the train and test datasets called “train_data” and “test_data” and removes redundant files.
+Step 3 combines the observations, descriptive variable names, activities and subjects into single dataframes for each of the train and test datasets called “train_data” and “test_data” and removes redundant files.
 
 Step 4 binds the train and test datasets into a single dataset called “data” and orders this data by subject (i.e. volunteer) and activity. It also removes redundant files.
 
 Step 5 extracts only those variables containing observations relating to the mean and standard deviation of each measurement and stores these in a dataframe called “data_select”.
 
-Step 6 creates a tidy data set, "tidy_data", with the average of each variable for each activity and subject. For clarity, it also adds the activity labels ("walking" ...etc.) to the dataframe. Corrections are also made to variable names where the word “Body” was duplicated in the original data set.
+Step 6 creates a tidy data set, "tidy_data", with the average of each variable for each activity and subject. For clarity, it also adds the activity labels ("walking" ...etc.) to the dataframe. Corrections are also made to one of the descriptive variable names where the word “Body” was duplicated in the original data set.
