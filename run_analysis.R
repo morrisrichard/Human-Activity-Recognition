@@ -4,10 +4,9 @@ if (!file.exists("UCI_HAR_Dataset")) {dir.create("UCI_HAR_Dataset")}
 url <- "https://getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(url, destfile = "./UCI_HAR_Dataset/data.zip")
 
-# 2. Unzip and load into R the relevant components of the original data set
+# 2. Unzip and load into R the relevant components of the original dataset
 features <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/features.txt"), header=F)
 activity_labels <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/activity_labels.txt"), header=F)
-
 train_data <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/train/X_train.txt"), header=F)
 test_data <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/test/X_test.txt"), header=F)
 train_subject <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/train/subject_train.txt"), header=F)
@@ -15,7 +14,7 @@ test_subject <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/te
 train_labels <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/train/y_train.txt"), header=F)
 test_labels <- read.table(unz("./UCI_HAR_Dataset/data.zip", "UCI HAR Dataset/test/y_test.txt"), header=F)
 
-# 3. Combine the observations, descriptive variable names, activities and subjects into single data frames
+# 3. Combine the observations, descriptive variable names, activities and subjects into single dataframes
 train_data <- data.frame(train_subject, train_labels, train_data)
 colnames(train_data) <- c("subject", "activity", features[,2])
 remove(train_subject, train_labels)
