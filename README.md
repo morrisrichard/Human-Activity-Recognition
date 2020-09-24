@@ -1,7 +1,7 @@
 # Human-Activity-Recognition
 Getting and Cleaning Data Assignment
 
-This file explain the steps in the R script “run_analysis.R” used to organise, extract and tidy data from the “Human Activity Recognition Using Smartphones Dataset” of Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+This file explains the steps in the R script “run_analysis.R” used to organise, extract and tidy data from the “Human Activity Recognition Using Smartphones Dataset” of Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 
 About the dataset
 
