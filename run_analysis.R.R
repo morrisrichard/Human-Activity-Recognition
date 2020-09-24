@@ -32,8 +32,8 @@ remove(train_data, test_data)
 data_select <- data[, which(colnames(data) %in% c("subject", "activity", 
                                                   grep("std()|mean+[^Freq]+()", colnames(data), value=TRUE)))]
 
-# 6. Creates a tidy data set with the average of each variable for each activity and subject
-# also includes the names of the activities ("walking" ...etc) in the dataframe
+# 6. Create a tidy data set with the average of each variable for each activity and subject
+# also include the names of the activities ("walking" ...etc) in the dataframe
 # and correct an error (repetition) in one of the variable names in the original data set
 tidy_data <- aggregate(. ~ subject + activity, data_select, mean)
 names(tidy_data) <-gsub("BodyBody", "Body", names(tidy_data))
