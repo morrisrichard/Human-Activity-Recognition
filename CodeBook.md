@@ -1,4 +1,4 @@
-The variables in this data set are a subset of the data contained in: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The variables in this dataset are a subset of the data contained in: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 They are derived from accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ, where ‘-XYZ’ is used to denote 3-axial signals in the X, Y and Z directions.
 
